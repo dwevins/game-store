@@ -49,5 +49,8 @@
     "eslint-config-rtablada": "^2.0.0",
     "eslint-plugin-react": "^4.3.0",
     "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "babel-eslint": "^6.1.2"
   }
 }
