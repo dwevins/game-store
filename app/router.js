@@ -10,8 +10,6 @@ Router.map(function () {
   this.route('register');
   this.route('login');
   this.route('checkout');
-
-  return undefined;
 });
 
 export default Router;

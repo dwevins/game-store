@@ -3,10 +3,10 @@ import moduleForAcceptance from 'game-store/tests/helpers/module-for-acceptance'
 
 moduleForAcceptance('Acceptance | shop');
 
-test('User can visit store page (index route)', function (assert) {
+test('User can visit store page (index route)', (assert) => {
   visit('/');
 
-  andThen(function () {
+  andThen(() => {
     assert.equal(currentURL(), '/', 'user is at root url');
     assert.equal(currentRouteName(), 'index', 'user is in index route');
   });
