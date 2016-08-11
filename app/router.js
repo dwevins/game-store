@@ -6,11 +6,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function () {
-  this.route('shop', { path: '/' }, function () {
-    this.route('register');
-    this.route('login');
-    this.route('checkout');
-  });
+  this.route('index', { path: '/' });
+  this.route('register');
+  this.route('login');
+  this.route('checkout');
 
   return undefined;
 });
