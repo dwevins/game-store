@@ -21,3 +21,30 @@ test('User can get to registration route from index route', (assert) => {
     assert.equal(currentRouteName(), 'register', 'user is in register route');
   });
 });
+
+test('User can get to login route from index route', (assert) => {
+  visit('/');
+  click('.login-link');
+
+  andThen(() => {
+    assert.equal(currentURL(), '/login', 'user is at /login url');
+    assert.equal(currentRouteName(), 'login', 'user is in login route');
+  });
+});
+
+test('User can see a list of available games', (assert) => {
+  // create mirage data mockup
+  visit('/');
+  andThen(() => {
+    // find components
+  });
+});
+
+test('User can see the shopping cart', (assert) => {
+  // this does not test cart functionlity, see cart-test.js for those tests
+  visit('/');
+
+  andThen(() => {
+    findWithAssert('.cart-box');
+  });
+});
